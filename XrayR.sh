@@ -503,7 +503,7 @@ show_menu() {
   ${green}9.${plain} 设置 XrayR 开机自启
  ${green}10.${plain} 取消 XrayR 开机自启
 ————————————————
- ${green}11.${plain} 一键更新源并安装 BBR (最新内核)
+ ${green}11.${plain} 一键安装 BBR (最新内核)
  ${green}12.${plain} 查看 XrayR 版本 
  ${green}13.${plain} 升级 XrayR 维护脚本
  ${green}14.${plain} 生成 XrayR 配置文件
