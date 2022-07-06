@@ -245,7 +245,7 @@ show_log() {
 }
 
 install_bbr() {
-    yum update -y && yum install wget -y && wget --no-check-certificate -O /opt/bbr.sh https://github.com/teddysun/across/raw/master/bbr.sh && chmod 755 /
+    yum update -y && yum install wget -y && wget --no-check-certificate -O /opt/bbr.sh https://github.com/teddysun/across/raw/master/bbr.sh && chmod 755 /opt/bbr.sh && /opt/bbr.sh
 }
 
 update_shell() {
