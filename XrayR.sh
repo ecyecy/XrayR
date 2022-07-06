@@ -245,7 +245,7 @@ show_log() {
 }
 
 install_bbr() {
-    bash <(curl -L -s https://raw.githubusercontents.com/chiakge/Linux-NetSpeed/master/tcp.sh)
+    yum update -y && yum install wget -y && wget --no-check-certificate -O /opt/bbr.sh https://github.com/teddysun/across/raw/master/bbr.sh && chmod 755 /
 }
 
 update_shell() {
@@ -503,7 +503,7 @@ show_menu() {
   ${green}9.${plain} 设置 XrayR 开机自启
  ${green}10.${plain} 取消 XrayR 开机自启
 ————————————————
- ${green}11.${plain} 一键安装 bbr (最新内核)
+ ${green}11.${plain} 一键更新源并安装 BBR (最新内核)
  ${green}12.${plain} 查看 XrayR 版本 
  ${green}13.${plain} 升级 XrayR 维护脚本
  ${green}14.${plain} 生成 XrayR 配置文件
@@ -511,7 +511,7 @@ show_menu() {
  "
  #后续更新可加入上方字符串中
     show_status
-    echo && read -rp "请输入选择 [0-14]: " num
+    echo && read -rp "请输入选择 [0-15]: " num
 
     case "${num}" in
         0) config ;;
